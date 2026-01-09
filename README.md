@@ -1,2 +1,2 @@
 # HitTheMan
-Android app all hitting the Man.
+Android App Game All  About Hitting The Man.
