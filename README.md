@@ -1,2 +1,2 @@
 # HitTheMan
-Android app all about colours.
+Android app all hitting the Man.
