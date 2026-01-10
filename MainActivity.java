@@ -3,6 +3,8 @@ package com.example.hittheman;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.WindowManager;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -29,7 +31,11 @@ public class MainActivity extends AppCompatActivity {
         //4. ID for Button
         btnStart = findViewById(R.id.btnStart);
 
-        // 5. Click Event for Button
+        // 5. Setup and Start Animation
+        Animation pulse = AnimationUtils.loadAnimation(this, R.anim.pulse);
+        btnStart.startAnimation(pulse);
+
+        // 6. Click Event for Button
         btnStart.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity.this, GameActivity.class);
             startActivity(intent);
