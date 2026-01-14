@@ -53,6 +53,12 @@ public class GameActivity extends AppCompatActivity {
         soundPool = new SoundPool.Builder().setMaxStreams(5).setAudioAttributes(attrs).build();
         hitSoundId = soundPool.load(this, R.raw.hit_sound, 1);
 
+        // Initialize Holes
+        for (int i = 0; i < 9; i++) {
+            int resID = getResources().getIdentifier("iv" + i, "id", getPackageName());
+            holes[i] = findViewById(resID);
+            holes[i].setOnClickListener(v -> handleHit((ImageView) v));
+        }
 
         startGame();
     }
