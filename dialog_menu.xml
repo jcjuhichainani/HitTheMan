@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="280dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_menu_box"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="— MENU —"
+        android:textColor="#FFEDAB"
+        android:textSize="32sp"
+        android:letterSpacing="0.1"
+        android:shadowColor="#000000"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="2"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="24dp"
+        android:background="#FFEDAB" />
+
+    <Button
+        android:id="@+id/menuAbout"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#FFEDAB"
+        android:text="ABOUT US"
+        android:textSize="18sp"
+        android:textColor="#0c6038"
+        android:textStyle="bold"
+        android:elevation="4dp" />
+
+    <Button
+        android:id="@+id/menuExit"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:backgroundTint="#FFEDAB"
+        android:text="EXIT GAME"
+        android:textSize="18sp"
+        android:textColor="#0c6038"
+        android:textStyle="bold"
+        android:elevation="4dp" />
+
+</LinearLayout>
