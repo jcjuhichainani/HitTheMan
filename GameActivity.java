@@ -1,4 +1,4 @@
-package com.example.hittheman;
+package com.jr.hittheman;
 
 import android.content.Context;
 import android.content.SharedPreferences;
